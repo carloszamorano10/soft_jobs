@@ -7,6 +7,6 @@ const app = express();
 
 
 app.use(express.json());
-app.use("/api", userRouter)
+app.use("/", userRouter)
 
 app.listen(PORT, console.log(`server on http://localhost:${PORT}`));
