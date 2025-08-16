@@ -7,7 +7,7 @@ import { verifyToken } from "../middleware/verifytoken.middleware.js";
 
 const router = Router();
 
-router.post("/register", verifyToken, registerUser);
-router.get("/usuarios",verifyToken ,getAllUsers);
+router.post("/usuarios", registerUser);
+router.get("/usuarios", verifyToken, getAllUsers);
 
 export default router;
